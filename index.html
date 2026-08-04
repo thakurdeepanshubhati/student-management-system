@@ -1,40 +1,167 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Student Management System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Management System</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            text-align: center;
-            margin-top: 100px;
-        }
-
-        h1 {
-            color: #007bff;
-        }
-
-        p {
-            color: #555;
-            font-size: 18px;
-        }
-    </style>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            console.log("Student Management System Loaded Successfully!");
-        });
-    </script>
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f4f4f4;
+margin:0;
+padding:0;
+}
+header{
+background:#007BFF;
+color:white;
+padding:20px;
+text-align:center;
+}
+.container{
+width:80%;
+margin:30px auto;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+h2{
+text-align:center;
+color:#007BFF;
+}
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+}
+table,th,td{
+border:1px solid black;
+}
+th{
+background:#007BFF;
+color:white;
+padding:10px;
+}
+td{
+padding:10px;
+text-align:center;
+}
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+}
+button{
+background:#007BFF;
+color:white;
+border:none;
+padding:10px 20px;
+cursor:pointer;
+border-radius:5px;
+}
+button:hover{
+background:#0056b3;
+}
+footer{
+background:#007BFF;
+color:white;
+text-align:center;
+padding:10px;
+margin-top:20px;
+}
+</style>
 </head>
 
 <body>
 
-    <h1>Student Management System</h1>
+<header>
+<h1>Student Management System</h1>
+<p>Frontend Engineering Project (HTML Only)</p>
+</header>
 
-    <p>Frontend Engineering Project</p>
+<div class="container">
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+<label>Student ID</label>
+<input type="text" placeholder="Enter Student ID">
+
+<label>Student Name</label>
+<input type="text" placeholder="Enter Student Name">
+
+<label>Email</label>
+<input type="email" placeholder="Enter Email">
+
+<label>Course</label>
+<select>
+<option>B.Tech CSE</option>
+<option>BCA</option>
+<option>MCA</option>
+<option>BBA</option>
+</select>
+
+<label>Semester</label>
+<select>
+<option>1st</option>
+<option>2nd</option>
+<option>3rd</option>
+<option>4th</option>
+<option>5th</option>
+<option>6th</option>
+<option>7th</option>
+<option>8th</option>
+</select>
+
+<button type="button">Submit</button>
+
+</form>
+
+<h2>Student Records</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Course</th>
+<th>Semester</th>
+</tr>
+
+<tr>
+<td>101</td>
+<td>Deepanshu Bhati</td>
+<td>thakur.deepanshu.bhati.963@gmail.com</td>
+<td>B.Tech CSE</td>
+<td>2nd</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td>Rahul Sharma</td>
+<td>rahul@gmail.com</td>
+<td>BCA</td>
+<td>1st</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td>Anjali Verma</td>
+<td>anjali@gmail.com</td>
+<td>MCA</td>
+<td>3rd</td>
+</tr>
+
+</table>
+
+</div>
+
+<footer>
+<p>© 2026 Student Management System | Developed by Deepanshu Bhati</p>
+</footer>
 
 </body>
-
 </html>
