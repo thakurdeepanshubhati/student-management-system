@@ -1,21 +1,14 @@
-# student-management-system
-A responsive Student Management System frontend developed using HTML, CSS, JavaScript, and Bootstrap. The project demonstrates modern UI design, student registration, dashboard, and basic frontend functionalities.
-
 # Student Management System
 
-## Frontend Engineering Project
+## Project Description
+This is a simple Student Management System developed using only HTML. The project includes a student registration form and a student records table in a single HTML file.
 
-### Technologies Used
+## Technologies Used
 - HTML5
-- CSS3
-- JavaScript
 
-### Features
-- Responsive User Interface
-- Student Registration
-- Dashboard
-- Basic Frontend Design
+## Files
+- index.html
+- README.md
 
-### Developed By
+## Author
 Deepanshu Bhati
-B.Tech CSE
