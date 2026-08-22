@@ -1,0 +1,522 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #101f3d;
+    background-color: #ffffff;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    min-height: 90px;
+
+    background-color: #0c2548;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 4%;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.logo p {
+    color: white;
+    font-size: 16px;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+nav {
+    display: flex;
+    gap: 42px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    padding: 32px 0;
+}
+
+nav a:hover {
+    color: #ffd400;
+}
+
+nav .active {
+    color: #ffd400;
+
+    border-bottom: 4px solid #ffd400;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 325px;
+
+    background-color: #eef6ff;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 120px;
+
+    padding: 35px 10%;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+
+    margin-bottom: 8px;
+}
+
+.hero-content h1 span {
+    color: #165bbb;
+}
+
+.hero-content h2 {
+    color: #165bbb;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    color: #222;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+
+    margin-bottom: 22px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn {
+    display: inline-block;
+
+    background-color: #0c2548;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 11px 30px;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #165bbb;
+}
+
+
+/* ================= PROFILE ================= */
+
+.profile img {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 7px solid white;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ================= INFORMATION ================= */
+
+.information {
+    width: 75%;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1.4fr;
+
+    gap: 30px;
+}
+
+
+/* ================= BOX ================= */
+
+.box {
+    padding: 5px;
+}
+
+.box h2 {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+    color: #102c55;
+}
+
+.box p {
+    font-size: 16px;
+
+    line-height: 1.55;
+
+    color: #111;
+
+    margin-bottom: 8px;
+}
+
+
+/* ================= SKILLS ================= */
+
+.box ul {
+    padding-left: 20px;
+}
+
+.box li {
+    margin-bottom: 8px;
+
+    color: #222;
+
+    font-size: 16px;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education {
+    grid-column: 3;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+th,
+td {
+    border: 1px solid #c8c8c8;
+
+    padding: 10px;
+
+    text-align: center;
+}
+
+th {
+    background-color: #f3f3f3;
+
+    color: #111;
+}
+
+
+/* ================= PROJECTS ================= */
+
+.projects {
+    grid-column: 1 / 3;
+}
+
+.project-container {
+    display: flex;
+
+    gap: 18px;
+}
+
+.project-card {
+    flex: 1;
+
+    border: 1px solid #d0d0d0;
+
+    border-radius: 5px;
+
+    padding: 15px;
+
+    min-height: 170px;
+
+    transition: 0.2s;
+}
+
+.project-card:hover {
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.12);
+
+    transform: translateY(-2px);
+}
+
+.project-card h3 {
+    font-size: 16px;
+
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+.project-card a {
+    color: #0066cc;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    grid-column: 3;
+}
+
+form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+form label {
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 9px;
+
+    margin-bottom: 10px;
+
+    border: 1px solid #ccc;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+}
+
+form textarea {
+    height: 65px;
+
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+form button {
+    background-color: #0c2548;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #165bbb;
+}
+
+form .reset {
+    background-color: #ddd;
+
+    color: #222;
+}
+
+
+/* ================= SOCIAL ================= */
+
+.social {
+    grid-column: 1 / 3;
+}
+
+.social-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.social-links a {
+    color: #075fca;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #0c2548;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    height: 55px;
+
+    background-color: #0c2548;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 14px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .header {
+        height: auto;
+
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    nav {
+        gap: 20px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        margin-top: 15px;
+    }
+
+    nav a {
+        padding: 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+
+        gap: 30px;
+
+        text-align: center;
+    }
+
+    .information {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+    }
+
+    .education,
+    .projects,
+    .contact,
+    .social {
+        grid-column: auto;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content h2 {
+        font-size: 21px;
+    }
+
+    .profile img {
+        width: 190px;
+
+        height: 190px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th,
+    td {
+        padding: 6px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
