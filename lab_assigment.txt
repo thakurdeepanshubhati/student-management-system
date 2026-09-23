@@ -1,0 +1,235 @@
+<!-- Q1 student marksheet -->
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marksheet</title>
+</head>
+<body>
+
+<h2>Student Marksheet</h2>
+
+<table border="1">
+    <tr>
+        <th>Subject</th>
+        <th>Marks</th>
+        <th>Grade</th>
+    </tr>
+
+    <tr>
+        <td>HTML</td>
+        <td>85</td>
+        <td>A</td>
+    </tr>
+
+    <tr>
+        <td>CSS</td>
+        <td>78</td>
+        <td>B</td>
+    </tr>
+
+    <tr>
+        <td>JavaScript</td>
+        <td>92</td>
+        <td>A</td>
+    </tr>
+
+    <tr>
+        <td>Java</td>
+        <td>80</td>
+        <td>A</td>
+    </tr>
+
+    <tr>
+        <th>Total</th>
+        <th>335</th>
+        <th>A</th>
+    </tr>
+</table>
+
+</body>
+</html>
+============================================================
+
+
+
+<!-- Q2 resume -->
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>My Resume</title>
+</head>
+<body>
+
+<h1>My Resume</h1>
+
+<h2>Personal Information</h2>
+<p><b>Name:</b> Naushika Faridi</p>
+<p><b>Email:</b> naushika@gmail.com</p>
+<p><b>Phone:</b> 98765#####</p>
+<p><b>Address:</b> Delhi, India</p>
+
+<h2>Career Objective</h2>
+<p>
+    To obtain a challenging position where I can use my skills
+    and improve my knowledge.
+</p>
+
+<h2>Education</h2>
+<ul>
+    <li>B.Tech - ABC College - 2026</li>
+    <li>12th - XYZ School - 2025</li>
+    <li>10th - XYZ School - 2023</li>
+</ul>
+
+<h2>Skills</h2>
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Java</li>
+</ul>
+
+<h2>Hobbies</h2>
+<ul>
+    <li>Watching movies</li>
+    <li>Drawing</li>
+    <li>Playing Games</li>
+</ul>
+
+</body>
+</html>
+
+
+================================================
+<!-- Q3- restaurant menu using list -->
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurant Menu</title>
+</head>
+<body>
+
+<h1>Restaurant Menu</h1>
+
+<h2>Starters</h2>
+<ul>
+    <li>Spring Rolls - ₹120</li>
+    <li>French Fries - ₹100</li>
+    <li>Paneer Tikka - ₹180</li>
+</ul>
+
+<h2>Main Course</h2>
+<ul>
+    <li>Paneer Butter Masala - ₹220</li>
+    <li>Veg Biryani - ₹180</li>
+    <li>Dal Makhani - ₹160</li>
+</ul>
+
+<h2>Drinks</h2>
+<ul>
+    <li>Cold Drink - ₹60</li>
+    <li>Fresh Juice - ₹100</li>
+    <li>Milkshake - ₹120</li>
+</ul>
+
+<h2>Desserts</h2>
+<ul>
+    <li>Ice Cream - ₹80</li>
+    <li>Gulab Jamun - ₹70</li>
+    <li>Brownie - ₹120</li>
+</ul>
+
+</body>
+</html>
+==================================================================
+<!-- Q4 registration form -->
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+<h1>Registration Form</h1>
+
+<form>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br><br>
+
+    <label>Gender:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <br><br>
+
+    <label>Hobbies:</label>
+
+    <input type="checkbox" id="reading" name="hobby" value="reading">
+    <label for="reading">Reading</label>
+
+    <input type="checkbox" id="sports" name="hobby" value="sports">
+    <label for="sports">Sports</label>
+
+    <input type="checkbox" id="music" name="hobby" value="music">
+    <label for="music">Music</label>
+
+    <br><br>
+
+    <label for="course">Course:</label>
+    <select id="course" name="course">
+        <option value="btech">B.Tech</option>
+        <option value="bca">BCA</option>
+        <option value="bba">BBA</option>
+        <option value="mca">MCA</option>
+    </select>
+
+    <br><br>
+
+    <input type="submit" value="Register">
+
+</form>
+
+</body>
+</html>
+===========================================================
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+</head>
+<body>
+
+<h1>Login</h1>
+
+<form>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br><br>
+
+    <input type="submit" value="Login">
+
+</form>
+
+</body>
+</html>
+
+
+
