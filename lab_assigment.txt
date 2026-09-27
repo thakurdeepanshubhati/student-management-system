@@ -63,10 +63,10 @@
 <h1>My Resume</h1>
 
 <h2>Personal Information</h2>
-<p><b>Name:</b> Naushika Faridi</p>
-<p><b>Email:</b> naushika@gmail.com</p>
-<p><b>Phone:</b> 98765#####</p>
-<p><b>Address:</b> Delhi, India</p>
+<p><b>Name:</b> Deepanshu Bhati</p>
+<p><b>Email:</b> deepanshu@gmail.com</p>
+<p><b>Phone:</b> 95576#####</p>
+<p><b>Address:</b> Greater Noida,U.P, India</p>
 
 <h2>Career Objective</h2>
 <p>
