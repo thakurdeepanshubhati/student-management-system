@@ -1,330 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Student Management System</title>
-<style>
-body{
-    font-family:Arial,sans-serif;
-    background:#f4f4f4;
-    margin:0;
-    padding:0;
-}
-header{
-    background:#007BFF;
-    color:white;
-    padding:20px;
-    text-align:center;
-}
-.container{
-    width:80%;
-    margin:30px auto;
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 0 10px gray;
-}
-h2{
-    text-align:center;
-    color:#007BFF;
-}
-table{
-    width:100%;
-    border-collapse:collapse;
-    margin-top:20px;
-}
-table,th,td{
-    border:1px solid black;
-}
-th{
-    background:#007BFF;
-    color:white;
-    padding:10px;
-}
-td{
-    padding:10px;
-    text-align:center;
-}
-input,select{
-    width:100%;
-    padding:10px;
-    margin:8px 0;
-    box-sizing:border-box;
-}
-button{
-    background:#007BFF;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    cursor:pointer;
-    border-radius:5px;
-}
-button:hover{
-    background:#0056b3;
-}
-.delete{
-    background:red;
-    padding:7px 12px;
-}
-.delete:hover{
-    background:darkred;
-}
-.search{
-    margin-top:20px;
-}
-.total{
-    background:#007BFF;
-    color:white;
-    padding:12px;
-    margin-top:20px;
-    border-radius:5px;
-    text-align:center;
-}
-footer{
-    background:#007BFF;
-    color:white;
-    text-align:center;
-    padding:10px;
-    margin-top:20px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <header>
-<h1>Student Management System</h1>
-<p>Frontend Engineering Project</p>
+    <h1>Student Management System</h1>
+    <p>Frontend Engineering Project</p>
 </header>
+
 <div class="container">
-<h2>Student Registration Form</h2>
-<form id="studentForm">
-<label>Student ID</label>
-<input type="text" id="studentId"
-placeholder="Enter Student ID">
-<label>Student Name</label>
-<input type="text" id="studentName"
-placeholder="Enter Student Name">
-<label>Email</label>
-<input type="email" id="email"
-placeholder="Enter Email">
-<label>Course</label>
-<select id="course">
-<option>B.Tech CSE</option>
-<option>BCA</option>
-<option>MCA</option>
-<option>BBA</option>
-</select>
-<label>Semester</label>
-<select id="semester">
-<option>1st</option>
-<option>2nd</option>
-<option>3rd</option>
-<option>4th</option>
-<option>5th</option>
-<option>6th</option>
-<option>7th</option>
-<option>8th</option>
-</select>
-<button type="button" onclick="addStudent()">
-Add Student
-</button>
-</form>
-<div class="total">
-Total Students: <span id="total">3</span>
-</div>
-<h2>Student Records</h2>
-<div class="search">
-<input type="text"
-id="search"
-placeholder="Search student by name..."
-onkeyup="searchStudent()">
-</div>
-<table>
-<tr>
-<th>ID</th>
-<th>Name</th>
-<th>Email</th>
-<th>Course</th>
-<th>Semester</th>
-<th>Action</th>
-</tr>
-<tbody id="studentTable">
-<tr>
-<td>101</td>
-<td>Deepanshu Bhati</td>
-<td>thakur.deepanshu.bhati.963@gmail.com</td>
-<td>B.Tech CSE</td>
-<td>2nd</td>
 
-<td>
-<button class="delete"
-onclick="deleteStudent(this)">
-Delete
-</button>
-</td>
+    <h2>Student Registration Form</h2>
 
-</tr>
+    <form id="studentForm">
 
-<tr>
+        <label>Student ID</label>
+        <input type="text" id="studentId" placeholder="Enter Student ID">
 
-<td>102</td>
-<td>Rahul Sharma</td>
-<td>rahul@gmail.com</td>
-<td>BCA</td>
-<td>1st</td>
+        <label>Student Name</label>
+        <input type="text" id="studentName" placeholder="Enter Student Name">
 
-<td>
-<button class="delete"
-onclick="deleteStudent(this)">
-Delete
-</button>
-</td>
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter Email">
 
-</tr>
+        <label>Course</label>
+        <select id="course">
+            <option>B.Tech CSE</option>
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>BBA</option>
+        </select>
 
-<tr>
+        <label>Semester</label>
+        <select id="semester">
+            <option>1st</option>
+            <option>2nd</option>
+            <option>3rd</option>
+            <option>4th</option>
+            <option>5th</option>
+            <option>6th</option>
+            <option>7th</option>
+            <option>8th</option>
+        </select>
 
-<td>103</td>
-<td>Anjali Verma</td>
-<td>anjali@gmail.com</td>
-<td>MCA</td>
-<td>3rd</td>
+        <button type="button" onclick="addStudent()">
+            Add Student
+        </button>
 
-<td>
-<button class="delete"
-onclick="deleteStudent(this)">
-Delete
-</button>
-</td>
+    </form>
 
-</tr>
+    <div class="total">
+        Total Students: <span id="total">3</span>
+    </div>
 
-</tbody>
+    <h2>Student Records</h2>
 
-</table>
+    <div class="search">
+        <input type="text"
+               id="search"
+               placeholder="Search student by name..."
+               onkeyup="searchStudent()">
+    </div>
+
+    <table>
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>Semester</th>
+            <th>Action</th>
+        </tr>
+
+        <tbody id="studentTable">
+
+            <tr>
+                <td>101</td>
+                <td>Deepanshu Bhati</td>
+                <td>thakur.deepanshu.bhati.963@gmail.com</td>
+                <td>B.Tech CSE</td>
+                <td>2nd</td>
+                <td>
+                    <button class="delete" onclick="deleteStudent(this)">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Rahul Sharma</td>
+                <td>rahul@gmail.com</td>
+                <td>BCA</td>
+                <td>1st</td>
+                <td>
+                    <button class="delete" onclick="deleteStudent(this)">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Anjali Verma</td>
+                <td>anjali@gmail.com</td>
+                <td>MCA</td>
+                <td>3rd</td>
+                <td>
+                    <button class="delete" onclick="deleteStudent(this)">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
 
 </div>
 
 <footer>
-
-<p>
-© 2026 Student Management System | Developed by Deepanshu Bhati
-</p>
-
+    <p>
+        © 2026 Student Management System | Developed by Deepanshu Bhati
+    </p>
 </footer>
 
-<script>
-
-
-function addStudent(){
-
-    let id = document.getElementById("studentId").value;
-
-    let name = document.getElementById("studentName").value;
-
-    let email = document.getElementById("email").value;
-
-    let course = document.getElementById("course").value;
-
-    let semester = document.getElementById("semester").value;
-
-
-    if(id == "" || name == "" || email == ""){
-
-        alert("Please fill all details");
-
-        return;
-    }
-
-
-    let table = document.getElementById("studentTable");
-
-    let row = table.insertRow();
-
-
-    row.insertCell(0).innerHTML = id;
-
-    row.insertCell(1).innerHTML = name;
-
-    row.insertCell(2).innerHTML = email;
-
-    row.insertCell(3).innerHTML = course;
-
-    row.insertCell(4).innerHTML = semester;
-
-
-    row.insertCell(5).innerHTML =
-    '<button class="delete" onclick="deleteStudent(this)">Delete</button>';
-
-
-    updateTotal();
-
-
-    document.getElementById("studentForm").reset();
-
-
-    alert("Student added successfully!");
-
-}
-
-
-
-function deleteStudent(button){
-
-    let row = button.parentNode.parentNode;
-
-    row.remove();
-
-    updateTotal();
-
-}
-
-
-
-function updateTotal(){
-
-    let table = document.getElementById("studentTable");
-
-    let total = table.rows.length;
-
-    document.getElementById("total").innerHTML = total;
-
-}
-
-
-
-function searchStudent(){
-
-    let search = document.getElementById("search").value.toLowerCase();
-
-    let table = document.getElementById("studentTable");
-
-    let rows = table.getElementsByTagName("tr");
-
-
-    for(let i = 0; i < rows.length; i++){
-
-        let name = rows[i].cells[1].innerHTML.toLowerCase();
-
-
-        if(name.includes(search)){
-
-            rows[i].style.display = "";
-
-        }
-
-        else{
-
-            rows[i].style.display = "none";
-
-        }
-
-    }
-
-}
-
-</script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
